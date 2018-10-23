@@ -7,8 +7,6 @@
   /* How to add a comment in css (this only works here)*/
   body{
 background-color: orange;
-background-color: #333333;
-background-color: rgb(0,200,0);
 font-family: sans-serif;
 
   }
@@ -29,13 +27,57 @@ a:hover{
 }
 
 a:visited{
-  color: red;
+  color: blue;
 }
 
 #name{
 text-align: center;
 background-color: cyan;
+width: 960px;
+margin: 0 auto;
 
+}
+
+main{
+  background-color: white;
+  color: black;
+  margin: 0 auto;
+  width: 960px;
+  height: auto;
+}
+
+footer{
+  background-color: pink;
+  width: 960px;
+  margin: 0 auto;
+
+}
+
+nav{
+
+
+}
+
+nav ul{
+
+
+}
+
+nav ul li{
+  list-style: none;
+
+
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px
+
+}
+
+nav ul li a:hover{
+  color: grey;
 }
 
 p{
@@ -51,6 +93,14 @@ ul li{
   color: cyan;
 }
 
+#container1{
+width: 500px;
+height: auto;
+background-color: cyan;
+margin: 0 auto;
+
+}
+
 #box{
 background-color: pink;
 width: 180px;
@@ -63,7 +113,26 @@ padding-right: 10px;
 border-style: dashed;
 border-width: 15px 5px 15px 5px;
 border-color: purple;
-margin: 0 auto; 
+margin: 0 auto;
+
+}
+
+#box2{
+background-color: pink;
+width: 400px;
+height: 300px;
+padding: 10px;
+/* margin: 0 auto; */
+display: inline-block;
+
+}
+
+.columns{
+width: 180px;
+height: 400px;
+background-color: aqua;
+display: inline-block;
+margin-right: 15px;
 
 }
 
@@ -72,19 +141,37 @@ margin: 0 auto;
 <body>
   <h1 id="name">Naomi Sterling</h1>
 
-<h2 id="box">Hello</h2>
+  <nav>
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">Resume</a></li>
+      <li><a href="">About Me</a></li>
+      </ul>
 
+    </nav>
+
+
+<h2 id="box">Hello</h2>
+<main>
 <p>This is my most favorite class of all time. I will remember it forever!</p>
 <p>This is my most favorite class of all time. I will remember it forever!</p>
+</main>
+
 <a href="http://www.google.com">Click here to visit Google</a>
 
+<div id="box2">
 
-
-
+  <div class="columns">
+    
+  </div>
 
 
 
 </body>
+
+<footer>
+  <p> this is the footer </p>
+</footer>
 
 
 </html>

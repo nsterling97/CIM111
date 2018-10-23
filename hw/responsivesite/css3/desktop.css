@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: salmon;
+    margin: 0 auto;
+    font-family: 'Roboto Slab', serif;
+}
+
+nav{
+  width: 390px;
+  height: 35px;
+  background-color: darksalmon;
+  margin: 0 auto;
+}
+
+nav ul{
+
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+}
+
+nav ul li a:hover{
+  background-color: lightsalmon;
+}
+
+main {
+    width: 100%;
+    height: 630px;
+    background-color: lemonchiffon;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: salmon;
+    margin: 0 auto;
+}
+
+#name{
+  color: white;
+text-align: center;
+font-weight: bold;
+font-size: 50px;
+font-family: 'Roboto Slab', serif;
+
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 ;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0;
+}
+
+.column img {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  vertical-align: middle;
+  height: 200px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
