@@ -79,14 +79,14 @@ font-family: 'Roboto Slab', serif;
 }
 
 a:link{
-  color: indianred;
+  color: white;
 text-align: center;
 font-size: 20px;
 font-family: 'Roboto Slab', serif;
 }
 
 a:hover{
-  color: pink;
+  color: black;
 }
 
 
