@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>INTRO TO JAVASCRIPT AND JQUERY</title>
+
+<style>
+
+.box{
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+
+</style>
+
+
+
+</head>
+
+<body>
+  <h1 id="changeText">Javascript</h1>
+
+  <h2 id="info">Mouse over to see more info</h2>
+  <div id="recepticle"></div>
+
+  <h2>Image Gallery</h2>
+  <img id="image1" src="https://cdn1.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" width="100">
+  <img id="image2" src="https://cdn1.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" width="100">
+  <div id="imagerecepticle"></div>
+
+  <h2>Show, Hide and Toggle</h2>
+  <ul>
+<li id="show">Show</li>
+<li id="hide">Hide</li>
+<li id="toggle">Toggle</li>
+  </ul>
+
+<div class="box"></div>
+
+<script src="javascript/jquery-3.3.1.min.js"></script>
+
+<!-- where you place your script tag is important. first one is always jquery library. first you have the jquery library script, then your script. -->
+
+<script>
+//write a comment//
+//start of script//
+
+$(document).ready(function(){
+//all code should be placed below//
+
+$("body").css("background-color", "pink");
+
+$("h1").css("color", "midnightblue");
+
+$("#changeText").css("font-size", "40px");
+
+$("#changeText").html("I love javascript");
+
+
+$("#changeText").click(function(){
+  $("body").css("background-color", "yellow");
+
+}); //end of change text click//
+
+$("#info").mouseenter(function(){
+$("#recepticle").html("<i>This information is important</i>");
+
+});
+
+$("#info").mouseleave(function(){
+$("#recepticle").html("");
+$("#info").css("background-color","purple");
+
+})
+
+$("#image1").click(function(){
+$("#imagerecepticle").html('<img src="https://cdn1.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" width="300">');
+
+})
+
+$("#image2").click(function(){
+  $("#imagerecepticle").html('<img src="https://cdn1.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" width="300">');
+})
+
+$("#hide").click(function(){
+$(".box").hide()
+})
+
+$("#show").click(function(){
+$(".box").show()
+})
+
+
+}); //end of document ready//
+
+</script>
+
+
+</body>
+
+
+</html>

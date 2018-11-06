@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>The Steinbach Family Vodka Sauce</title>
+
+
+  <style>
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Merriweather');
+
+body{
+font-family: 'Merriweather', serif;
+  }
+
+h2{
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+}
+
+h4{
+  font-size: 15px;
+}
+
+.center{
+  display: block;
+  margin: 0 auto;
+}
+
+#grid1{
+  display: grid;
+  grid-template-areas: "col1 col2" ;
+  grid-template-rows: 400px;
+  grid-template-columns: 200px 200px;
+  justify-content: center;
+  text-align: center;
+}
+
+#col1{
+grid-area: col1;
+height: 200px;
+}
+
+#col2{
+grid-area: col2;
+height: 200px;
+
+}
+
+
+#grid2{
+  display: grid;
+  grid-template-areas: "col3 col4" ;
+  grid-template-rows: 600px;
+  grid-template-columns: 500px 500px;
+  grid-column-gap: 20px;
+  justify-content: center;
+  text-align: left;
+  margin-top: -280px;
+}
+
+#col3{
+grid-area: col3;
+background-color: oldlace;
+height: 300px;
+
+}
+
+#col4{
+grid-area: col4;
+background-color: oldlace;
+height: 300px;
+
+}
+
+.box{
+  width: 350px;
+  height: 80px;
+  background-color: oldlace;
+   margin: 120px auto;
+   margin-top: 10px;
+
+}
+
+.tips{
+margin-top: -260px;
+font-size: 40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1 align="center">Penne alla Vodka</h1>
+<h4 align="center">made with</h4>
+  <h2 id="changetext" align="center">The Steinbach Family Vodka Sauce</h2>
+
+    <img src="images/fam.jpg" height="250" class="center"/>
+
+
+  <section id="grid1">
+    <div id="col1">
+
+      <p>Level: Easy <br>
+      Yield: 8-10 servings</p>
+
+    </div>
+
+    <div id="col2">
+      <p>Prep time: 5 min<br>
+      Cook time: 45 min</p>
+
+    </div>
+
+
+  </section>
+
+  <section id="grid2">
+    <div id="col3">
+      <h1 align="center" id="ingr">Ingredients</h1>
+          <div id="image8"></div>
+<ul>
+<li>1 lb pasta (preferably penne or rigatoni)</li>
+<li>1/4 cup butter</li>
+<li>1 medium onion</li>
+<li>1 tsp. minced garlic</li>
+<li>6 slices prociutto</li>
+<li>1/4 cup parmesan cheese</li>
+<li>8 oz. heavy cream</li>
+<li>1/4 cup vodka</li>
+<li>1 28 oz. can crushed tomatoes</li>
+
+</ul>
+
+    </div>
+
+    <div id="col4">
+      <h1 align="center">Directions</h1>
+      <h6 align="center">(hover over each step for a visual)</h3>
+
+        <ol>
+          <li id="info">Boil pasta in 4 quarts of salted water for 8-10 minutes. </li>
+          <div id="image1"></div>
+          <li id="info2">In a separate pot, sauté the garlic and onion in butter.</li>
+          <div id="image2"></div>
+            <li id="info3">Add prociutto and cook for 5 minutes.</li>
+                    <div id="image3"></div>
+              <li id="info4">Add tomatoes and vodka, simmer for 20 minutes.</li>
+              <div id="image4"></div>
+                <li id="info5">Add heavy cream and parmesan cheese. Simmer until heated through.</li>
+                <div id="image5"></div>
+                  <li id="info6">Serve sauce over cooked pasta.</li>
+                    <div id="image6"></div>
+        </ol>
+    </div>
+
+  </section>
+
+<h2 id="hide" class="tips" align="center">Tips</h2>
+
+
+  <div class="box">
+<ul>
+  <li>For a healthier version use a butter substitute and whole wheat pasta.</li>
+  <li>Use fresh ingredients!</li>
+  <li>Make with love :)</li>
+</ul>
+
+  </div>
+
+<script src="javascript/jquery-3.3.1.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+$("#info").mouseenter(function(){
+$("#image1").html('<img src="images/1.jpg" width="300">');
+
+});
+
+$("#info").mouseleave(function(){
+$("#image1").html("");
+
+})
+
+$("#info2").mouseenter(function(){
+$("#image2").html('<img src="images/2.jpg" width="300">');
+
+});
+
+$("#info2").mouseleave(function(){
+$("#image2").html("");
+
+})
+
+$("#info3").mouseenter(function(){
+$("#image3").html('<img src="images/3.jpg" width="300">');
+
+});
+
+$("#info3").mouseleave(function(){
+$("#image3").html("");
+
+})
+
+$("#info4").mouseenter(function(){
+$("#image4").html('<img src="images/4.jpg" width="300">');
+
+});
+
+$("#info4").mouseleave(function(){
+$("#image4").html("");
+
+})
+
+$("#info5").mouseenter(function(){
+$("#image5").html('<img src="images/6.jpg" width="300">');
+
+});
+
+$("#info5").mouseleave(function(){
+$("#image5").html("");
+
+})
+
+$("#info6").mouseenter(function(){
+$("#image6").html('<img src="images/7.jpg" width="300">');
+
+});
+
+$("#info6").mouseleave(function(){
+$("#image6").html("");
+
+})
+
+$("#ingr").click(function(){
+$("#image8").html('<img src="images/8.jpg" width="300">');
+
+});
+
+$("#ingr").mouseleave(function(){
+$("#image8").html("");
+
+})
+
+$("#changetext").click(function(){
+  $("h2").css("color", "pink");
+
+})
+
+$("#hide").click(function(){
+$(".box").hide()
+})
+
+
+});
+
+</script>
+
+</body>
+
+
+
+</html>
