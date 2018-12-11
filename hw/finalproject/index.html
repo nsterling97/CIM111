@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Glam Guide for Beginners</title>
+  <link rel="stylesheet" href="css/desktop.css" media="only screen and (min-width: 600px)">
+  <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 600px)">
+
+  <meta name="viewport" content="initial-scale=1">
+
+
+  <style>
+  </style>
+
+  </head>
+
+<body>
+  <header>
+    <h1 id="info">Glam Guide for Beginners</h1>
+    <div id="recepticle" align="center"></div>
+
+    <nav>
+      <ul>
+        <li><a href="eyes/index.html">Eyes</a></li>
+        <li><a href="brows/index.html">Brows</a></li>
+        <li><a href="lips/index.html">Lips</a></li>
+        <li><a href="foundation/index.html">Foundation</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="grid1">
+      <div id="col1">  <img src="https://www.dermstore.com/blog/wp-content/uploads/2017/06/applying-lipstick.jpg" class="images"></div>
+
+      <div id="col2">
+        <p>Welcome to the Glam Guide for Beginners! <br><br>If you're ready to step your beauty game up you've come to the right place. I've put together the basics that you need to know when it comes to applying makeup. Click the different sections above to learn more about applying makeup for your eyes, brows, lips and foundation.<br>
+          <br>You'll find all the information you need here for the easiest tips and tricks for applying makeup as a beginner. This page was inspired after I had many friends ask if I could teach them how to apply makeup. After visiting each site on this page, hopefully you will have learned something new. <br><br>Goodluck! - Naomi
+         </p>
+
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer></footer>
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130178420-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-130178420-1');
+  </script>
+
+
+<script src="javascript/jquery-3.3.1.min.js"></script>
+<script>
+$(document).ready(function(){
+
+  $("#info").mouseenter(function(){
+  $("#recepticle").html("<i>but not just beginners! anyone can learn something here :)</i>");
+
+  });
+
+  $("#info").mouseleave(function(){
+  $("#recepticle").html("");
+
+  })
+
+
+});
+</script>
+
+
+</body>
+
+
+
+
+</html>
